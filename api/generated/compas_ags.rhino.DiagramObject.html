@@ -85,11 +85,7 @@
 <p>A diagram object represents a form or force diagram in the Rhino view.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>diagram</strong> (<a class="reference internal" href="compas_ags.diagrams.FormDiagram.html#compas_ags.diagrams.FormDiagram" title="compas_ags.diagrams.FormDiagram"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas_ags.diagrams.FormDiagram</span></code></a>) – The form diagram instance.</p></li>
-<li><p><strong>settings</strong> (<em>dict, optional</em>) – Visualisation settings for the corresponding Rhino object(s).
-Default is <code class="docutils literal notranslate"><span class="pre">None</span></code>, in which case the default settings of the artist are used.</p></li>
-</ul>
+<dd class="field-odd"><p><strong>diagram</strong> (<a class="reference internal" href="compas_ags.diagrams.Diagram.html#compas_ags.diagrams.Diagram" title="compas_ags.diagrams.Diagram"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas_ags.diagrams.Diagram</span></code></a>) – The form diagram instance.</p>
 </dd>
 <dt class="field-even">Attributes</dt>
 <dd class="field-even"><ul class="simple">
@@ -123,17 +119,17 @@ Default is <code class="docutils literal notranslate"><span class="pre">None</sp
 <tr class="row-even"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.modify.html#compas_ags.rhino.DiagramObject.modify" title="compas_ags.rhino.DiagramObject.modify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modify</span></code></a>()</p></td>
 <td><p>Modify the item represented by the object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.modify_edges.html#compas_ags.rhino.DiagramObject.modify_edges" title="compas_ags.rhino.DiagramObject.modify_edges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modify_edges</span></code></a>([edges, names])</p></td>
-<td><p>Modify the attributes of a selection of diagram edges.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.modify_edges.html#compas_ags.rhino.DiagramObject.modify_edges" title="compas_ags.rhino.DiagramObject.modify_edges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modify_edges</span></code></a>(edges)</p></td>
+<td><p>Modify the attributes of the edges of the mesh item.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.modify_faces.html#compas_ags.rhino.DiagramObject.modify_faces" title="compas_ags.rhino.DiagramObject.modify_faces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modify_faces</span></code></a>(faces)</p></td>
 <td><p>Modify the attributes of the faces of the mesh item.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.modify_vertices.html#compas_ags.rhino.DiagramObject.modify_vertices" title="compas_ags.rhino.DiagramObject.modify_vertices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modify_vertices</span></code></a>([vertices, names])</p></td>
-<td><p>Modify the attributes of a selection of diagram vertices.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.modify_vertices.html#compas_ags.rhino.DiagramObject.modify_vertices" title="compas_ags.rhino.DiagramObject.modify_vertices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modify_vertices</span></code></a>(vertices)</p></td>
+<td><p>Modify the attributes of the vertices of the mesh item.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.move.html#compas_ags.rhino.DiagramObject.move" title="compas_ags.rhino.DiagramObject.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>()</p></td>
-<td><p>Move the item represented by the object.</p></td>
+<td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.move_vertex.html#compas_ags.rhino.DiagramObject.move_vertex" title="compas_ags.rhino.DiagramObject.move_vertex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move_vertex</span></code></a>(vertex[, constraint, allow_off])</p></td>
 <td><p>Move one vertex of the diagram and update the data structure to the new geometry.</p></td>
@@ -150,10 +146,10 @@ Default is <code class="docutils literal notranslate"><span class="pre">None</sp
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.select.html#compas_ags.rhino.DiagramObject.select" title="compas_ags.rhino.DiagramObject.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select</span></code></a>()</p></td>
 <td><p>Select the object representing the item.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.select_edge.html#compas_ags.rhino.DiagramObject.select_edge" title="compas_ags.rhino.DiagramObject.select_edge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_edge</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.select_edge.html#compas_ags.rhino.DiagramObject.select_edge" title="compas_ags.rhino.DiagramObject.select_edge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_edge</span></code></a>([message])</p></td>
 <td><p>Manually select one edge in the Rhino view.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.select_edges.html#compas_ags.rhino.DiagramObject.select_edges" title="compas_ags.rhino.DiagramObject.select_edges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_edges</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.select_edges.html#compas_ags.rhino.DiagramObject.select_edges" title="compas_ags.rhino.DiagramObject.select_edges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_edges</span></code></a>([message])</p></td>
 <td><p>Manually select edges in the Rhino view.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.select_faces.html#compas_ags.rhino.DiagramObject.select_faces" title="compas_ags.rhino.DiagramObject.select_faces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_faces</span></code></a>()</p></td>
@@ -162,7 +158,7 @@ Default is <code class="docutils literal notranslate"><span class="pre">None</sp
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.select_vertex.html#compas_ags.rhino.DiagramObject.select_vertex" title="compas_ags.rhino.DiagramObject.select_vertex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_vertex</span></code></a>([message])</p></td>
 <td><p>Manually select one vertex in the Rhino view.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.select_vertices.html#compas_ags.rhino.DiagramObject.select_vertices" title="compas_ags.rhino.DiagramObject.select_vertices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_vertices</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.select_vertices.html#compas_ags.rhino.DiagramObject.select_vertices" title="compas_ags.rhino.DiagramObject.select_vertices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_vertices</span></code></a>([message])</p></td>
 <td><p>Manually select vertices in the Rhino view.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_ags.rhino.DiagramObject.unselect.html#compas_ags.rhino.DiagramObject.unselect" title="compas_ags.rhino.DiagramObject.unselect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unselect</span></code></a>()</p></td>
