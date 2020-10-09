@@ -21,7 +21,7 @@
   
   
   
-    <link rel="prev" title="Diagram.quads_to_triangles" href="compas_ags.diagrams.Diagram.quads_to_triangles.html" />
+    <link rel="prev" title="Diagram.remove_unused_vertices" href="compas_ags.diagrams.Diagram.remove_unused_vertices.html" />
   
 
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -52,8 +52,10 @@
         <li class="nav-item active"><a class="nav-link" href="https://blockresearchgroup.github.io/compas_ags">COMPAS AGS</a></li>
       </ul>
       <!-- primary -->
-      <!-- social -->
       <ul class="navbar-nav d-none d-md-flex ml-md-auto">
+        
+        <!-- version -->
+        <!-- social -->
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/BlockResearchGroup/compas_ags" target="_blank">
             <span class="fab fa-github fa-1x"></span>
@@ -64,8 +66,8 @@
             <span class="fab fa-discourse fa-1x"></span>
           </a>
         </li>
+        <!-- social -->
       </ul>
-      <!-- social -->
     </nav>
   </header>
   <!-- header -->
@@ -94,7 +96,7 @@
 </ul>
 </dd>
 <dt class="field-even">Raises</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.8)"><strong>Exception</strong></a> – If a callback is provided, but it is not callable.</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><strong>Exception</strong></a> – If a callback is provided, but it is not callable.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -221,6 +223,11 @@
 
     hljs.initHighlighting();
     anchors.add();
+
+    $('.nav-versions .dropdown-item').filter(function(i, ver) {
+      return window.location.href.startsWith(ver.href);
+    }).addClass("active");
+
   });
   </script>
   

@@ -48,8 +48,10 @@
         <li class="nav-item active"><a class="nav-link" href="https://blockresearchgroup.github.io/compas_ags">COMPAS AGS</a></li>
       </ul>
       <!-- primary -->
-      <!-- social -->
       <ul class="navbar-nav d-none d-md-flex ml-md-auto">
+        
+        <!-- version -->
+        <!-- social -->
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/BlockResearchGroup/compas_ags" target="_blank">
             <span class="fab fa-github fa-1x"></span>
@@ -60,8 +62,8 @@
             <span class="fab fa-discourse fa-1x"></span>
           </a>
         </li>
+        <!-- social -->
       </ul>
-      <!-- social -->
     </nav>
   </header>
   <!-- header -->
@@ -73,7 +75,9 @@
         
         
         <h1 class="display-4 p-0 mb-5">All modules for which code is available</h1>
-<ul><li><a href="compas/datastructures/mesh/_mesh.html">compas.datastructures.mesh._mesh</a></li>
+<ul><li><a href="compas/base.html">compas.base</a></li>
+<li><a href="compas/datastructures/datastructure.html">compas.datastructures.datastructure</a></li>
+<li><a href="compas/datastructures/mesh/_mesh.html">compas.datastructures.mesh._mesh</a></li>
 <li><a href="compas/datastructures/mesh/bbox.html">compas.datastructures.mesh.bbox</a></li>
 <li><a href="compas/datastructures/mesh/combinatorics.html">compas.datastructures.mesh.combinatorics</a></li>
 <li><a href="compas/datastructures/mesh/core/halfedge.html">compas.datastructures.mesh.core.halfedge</a></li>
@@ -85,9 +89,13 @@
 <li><a href="compas/datastructures/mesh/smoothing.html">compas.datastructures.mesh.smoothing</a></li>
 <li><a href="compas/datastructures/mesh/transformations.html">compas.datastructures.mesh.transformations</a></li>
 <li><a href="compas/datastructures/mesh/triangulation.html">compas.datastructures.mesh.triangulation</a></li>
+<li><a href="compas/datastructures/network/combinatorics.html">compas.datastructures.network.combinatorics</a></li>
+<li><a href="compas/datastructures/network/complementarity.html">compas.datastructures.network.complementarity</a></li>
 <li><a href="compas/datastructures/network/core/graph.html">compas.datastructures.network.core.graph</a></li>
 <li><a href="compas/datastructures/network/core/network.html">compas.datastructures.network.core.network</a></li>
 <li><a href="compas/datastructures/network/core/operations/split.html">compas.datastructures.network.core.operations.split</a></li>
+<li><a href="compas/datastructures/network/transformations.html">compas.datastructures.network.transformations</a></li>
+<li><a href="compas/datastructures/network/traversal.html">compas.datastructures.network.traversal</a></li>
 <li><a href="compas_ags/ags/core.html">compas_ags.ags.core</a></li>
 <li><a href="compas_ags/ags/graphstatics.html">compas_ags.ags.graphstatics</a></li>
 <li><a href="compas_ags/ags/loadpath.html">compas_ags.ags.loadpath</a></li>
@@ -202,6 +210,11 @@
 
     hljs.initHighlighting();
     anchors.add();
+
+    $('.nav-versions .dropdown-item').filter(function(i, ver) {
+      return window.location.href.startsWith(ver.href);
+    }).addClass("active");
+
   });
   </script>
   

@@ -52,8 +52,10 @@
         <li class="nav-item active"><a class="nav-link" href="https://blockresearchgroup.github.io/compas_ags">COMPAS AGS</a></li>
       </ul>
       <!-- primary -->
-      <!-- social -->
       <ul class="navbar-nav d-none d-md-flex ml-md-auto">
+        
+        <!-- version -->
+        <!-- social -->
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/BlockResearchGroup/compas_ags" target="_blank">
             <span class="fab fa-github fa-1x"></span>
@@ -64,8 +66,8 @@
             <span class="fab fa-discourse fa-1x"></span>
           </a>
         </li>
+        <!-- social -->
       </ul>
-      <!-- social -->
     </nav>
   </header>
   <!-- header -->
@@ -94,7 +96,7 @@
 <dd class="field-even"><p><em>int</em> – The identifier of the vertex after the given vertex in the face cycle.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – If the vertex is not part of the face.</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – If the vertex is not part of the face.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -217,6 +219,11 @@
 
     hljs.initHighlighting();
     anchors.add();
+
+    $('.nav-versions .dropdown-item').filter(function(i, ver) {
+      return window.location.href.startsWith(ver.href);
+    }).addClass("active");
+
   });
   </script>
   

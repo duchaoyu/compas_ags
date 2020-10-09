@@ -52,8 +52,10 @@
         <li class="nav-item active"><a class="nav-link" href="https://blockresearchgroup.github.io/compas_ags">COMPAS AGS</a></li>
       </ul>
       <!-- primary -->
-      <!-- social -->
       <ul class="navbar-nav d-none d-md-flex ml-md-auto">
+        
+        <!-- version -->
+        <!-- social -->
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/BlockResearchGroup/compas_ags" target="_blank">
             <span class="fab fa-github fa-1x"></span>
@@ -64,8 +66,8 @@
             <span class="fab fa-discourse fa-1x"></span>
           </a>
         </li>
+        <!-- social -->
       </ul>
-      <!-- social -->
     </nav>
   </header>
   <!-- header -->
@@ -80,17 +82,17 @@
 <h1 class="display-4 p-0 mb-5">ForceDiagram.unset_edge_attribute</h1>
 <dl class="method">
 <dt id="compas_ags.diagrams.ForceDiagram.unset_edge_attribute">
-<code class="sig-prename descclassname">ForceDiagram.</code><code class="sig-name descname">unset_edge_attribute</code><span class="sig-paren">(</span><em class="sig-param">key</em>, <em class="sig-param">name</em><span class="sig-paren">)</span></dt>
+<code class="sig-prename descclassname">ForceDiagram.</code><code class="sig-name descname">unset_edge_attribute</code><span class="sig-paren">(</span><em class="sig-param">edge</em>, <em class="sig-param">name</em><span class="sig-paren">)</span></dt>
 <dd><p>Unset the attribute of an edge.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>key</strong> (<em>tuple of int</em>) – The edge identifier.</p></li>
+<li><p><strong>edge</strong> (<em>tuple of int</em>) – The edge identifier.</p></li>
 <li><p><strong>name</strong> (<em>str</em>) – The name of the attribute.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Raises</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#KeyError" title="(in Python v3.8)"><strong>KeyError</strong></a> – If the edge does not exist.</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#KeyError" title="(in Python v3.9)"><strong>KeyError</strong></a> – If the edge does not exist.</p>
 </dd>
 </dl>
 <p class="rubric">Notes</p>
@@ -216,6 +218,11 @@ stored in the default edge attribute dict.</p>
 
     hljs.initHighlighting();
     anchors.add();
+
+    $('.nav-versions .dropdown-item').filter(function(i, ver) {
+      return window.location.href.startsWith(ver.href);
+    }).addClass("active");
+
   });
   </script>
   
